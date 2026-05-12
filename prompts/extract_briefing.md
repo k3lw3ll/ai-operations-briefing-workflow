@@ -19,6 +19,10 @@ Guidelines:
 - If information is missing, use `null` or add an item to `open_questions`.
 - Keep the output suitable for review before posting to Notion.
 - Return only valid JSON.
+- Do not include Markdown.
+- Do not include code fences.
+- Do not include commentary before or after the JSON.
+- The response must start with `{` and end with `}`.
 
 Input:
 

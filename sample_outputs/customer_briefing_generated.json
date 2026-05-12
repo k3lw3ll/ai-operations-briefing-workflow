@@ -1,41 +1,41 @@
 {
   "customer": "Northstar Logistics",
-  "summary": "Northstar's regional managers submit weekly updates in inconsistent formats (email, Notion, spreadsheets), requiring 3-4 hours of manual consolidation each Monday. They need an AI-assisted workflow to draft standardized leadership briefings with mandatory human review before posting to Notion.",
+  "summary": "Regional managers submit weekly updates in inconsistent formats (email, Notion, spreadsheets), requiring 3-4 hours of manual consolidation each Monday. Customer requests AI-assisted drafting of leadership briefings with mandatory human review before posting to Notion.",
   "stakeholders": [
     {
       "name": "Maya Chen",
       "role": "VP Operations",
-      "interests": "Reduce time spent consolidating regional updates; ensure accurate risk flagging and action item ownership; maintain team trust in output quality"
+      "interest": "Reduce time spent consolidating regional updates into leadership briefings; ensure output accuracy and proper action item assignment"
     },
     {
       "name": "Luis Ortega",
       "role": "Customer Success",
-      "interests": "Coordinate implementation and ensure customer success with the new workflow"
+      "interest": "Coordinate solution delivery and customer alignment"
     },
     {
       "name": "Priya Shah",
       "role": "Implementation Lead",
-      "interests": "Design and deliver the briefing workflow solution"
+      "interest": "Design and implement briefing workflow"
     },
     {
-      "name": "Regional Managers",
+      "name": "Operations lead",
+      "role": "Approver",
+      "interest": "Review and approve AI-drafted briefings before posting to Notion"
+    },
+    {
+      "name": "Regional managers",
       "role": "Data contributors",
-      "interests": "Submit weekly updates (currently in varied formats)"
-    },
-    {
-      "name": "Operations Lead",
-      "role": "Reviewer/Approver",
-      "interests": "Review and approve AI-drafted briefings before leadership distribution"
+      "interest": "Submit weekly updates"
     }
   ],
   "risks": [
     {
       "type": "adoption",
-      "description": "Team needs to trust the AI output quality before adopting the workflow"
+      "description": "Team needs to trust AI output quality before adopting the workflow"
     },
     {
       "type": "data_quality",
-      "description": "Action items may be assigned to incorrect owners if not properly validated"
+      "description": "Action items may be assigned to wrong person if AI misinterprets input"
     },
     {
       "type": "operational",
@@ -44,23 +44,24 @@
   ],
   "next_steps": [
     {
-      "action": "Create sample briefing workflow for one region and one weekly briefing",
+      "action": "Create sample briefing workflow",
       "owner": "Priya Shah / Luis Ortega",
       "due_date": "2026-05-19",
-      "notes": "Review scheduled with Maya next Friday"
+      "notes": "Review with Maya next Friday"
     },
     {
-      "action": "Review sample workflow with customer",
-      "owner": "Luis Ortega",
-      "due_date": "2026-05-19",
-      "notes": "Meeting with Maya Chen"
+      "action": "Start with one region and one weekly briefing as pilot",
+      "owner": null,
+      "due_date": null,
+      "notes": "Scope defined by customer as success criteria for first version"
     }
   ],
   "open_questions": [
-    "What is the specific format/template required for the leadership briefing output?",
-    "How many regions does Northstar have, and what is the rollout sequence after the pilot?",
-    "What approval mechanism will be used in Notion for the operations lead review?",
-    "Are there existing data validation rules or owner assignment logic to prevent incorrect action item assignments?"
+    "Which region should be selected for the pilot?",
+    "Who is the specific operations lead that will serve as approver?",
+    "What is the current Notion workspace structure for posting briefings?",
+    "Are there existing templates or examples of completed leadership briefings?",
+    "What is the process if the operations lead rejects or requests changes to a draft?"
   ],
   "human_review_required": true
 }
