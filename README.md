@@ -71,6 +71,14 @@ The working sample flow is implemented in `scripts/run_sample.py`.
 5. If Notion credentials are present, create a new Notion Customer Briefs database entry.
 6. Keep the generated briefing available for human review.
 
+## Screenshots
+
+The repository includes portfolio screenshots showing the working Notion output and the project structure:
+
+![Notion operational briefing output](docs/screenshots/notion-operational-briefing.png)
+
+![GitHub project structure](docs/screenshots/github-repository-overview.png)
+
 ## Current Features
 
 - Claude API integration using the Anthropic Python SDK
@@ -159,7 +167,7 @@ A fuller sample is available in `sample_outputs/customer_briefing.json`.
 - Add clearer risk-level classification rules
 - Add n8n workflow orchestration for scheduled runs, trigger-based workflows, and approvals
 - Add approval routing and notification handoffs
-- Add Notion screenshots and demo assets
+- Add additional demo assets as the workflow expands
 - Add retry and error-handling notes for production-like operations
 
 ## Portfolio / Demo Positioning

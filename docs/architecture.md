@@ -38,6 +38,8 @@ flowchart LR
 4. If Notion credentials are configured, the briefing is published to the Notion Customer Briefs database.
 5. A human reviewer validates the Notion entry before it is treated as operationally approved.
 
+The current Notion output is shown in [notion-operational-briefing.png](screenshots/notion-operational-briefing.png). The repository structure is shown in [github-repository-overview.png](screenshots/github-repository-overview.png).
+
 ## Layers
 
 ### Input Layer
