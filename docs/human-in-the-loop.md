@@ -18,7 +18,7 @@ Human review is especially important for:
 
 In the current prototype, `scripts/run_sample.py` generates structured JSON and can publish the briefing into the Notion Customer Briefs database. The Notion page is the practical review surface.
 
-The recommended status is `Draft` until an operations lead or account owner has checked the content. After review, the Notion entry can be manually approved, updated, or routed for follow-up.
+The current implementation does not include automated approval routing. The recommended status is `Draft` until an operations lead or account owner has checked the content. After review, the Notion entry can be manually approved, updated, or routed for follow-up.
 
 ## What Reviewers Should Verify
 
@@ -34,7 +34,7 @@ The recommended status is `Draft` until an operations lead or account owner has 
 
 ## Future n8n Extension
 
-n8n could later extend the human review loop by:
+n8n is planned for a future phase and is not implemented yet. It could later extend the human review loop by:
 
 - triggering the workflow when a transcript or note is added
 - sending review notifications to the right owner

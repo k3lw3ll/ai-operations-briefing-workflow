@@ -4,7 +4,7 @@
 
 AI Operations Briefing Workflow is a prototype operational AI workflow system for turning customer transcripts or internal operations notes into structured, reviewable briefings.
 
-The current implementation demonstrates a working flow from sample transcript to Claude API analysis, structured JSON generation, and optional Notion database publishing. It is intentionally lightweight and focuses on workflow design, operational adoption, and human-in-the-loop review rather than chatbot interaction.
+The current implementation demonstrates a working Python-based flow from sample transcript to Claude API analysis, structured JSON generation, and Notion database publishing when Notion credentials are configured. It is intentionally lightweight and focuses on workflow design, operational adoption, and human-in-the-loop review rather than chatbot interaction.
 
 This project is a prototype operational workflow system intended for experimentation and portfolio demonstration purposes.
 
@@ -31,6 +31,27 @@ The goal is not to replace operators. The goal is to create a repeatable workflo
 - Store outputs in Notion
 - Emphasize workflow design, operational adoption, and human-in-the-loop systems
 
+## Current Status
+
+Implemented now:
+
+- Python script workflow in `scripts/run_sample.py`
+- Claude API call using the Anthropic Python SDK
+- structured JSON output written locally
+- Notion database output using the Notion API through `requests`
+- prompt template for operational briefing extraction
+- sample transcript input and sample briefing output
+
+Planned next:
+
+- n8n orchestration
+- trigger-based workflows
+- approval routing
+- notification handoffs
+- additional operational integrations
+
+n8n is not implemented in the current repository. It is part of the planned orchestration layer for a future phase.
+
 ## Current Workflow
 
 ```text
@@ -47,7 +68,7 @@ The working sample flow is implemented in `scripts/run_sample.py`.
 2. Load `prompts/extract_briefing.md`.
 3. Send the transcript and prompt to Claude.
 4. Parse and write structured JSON to `sample_outputs/customer_briefing_generated.json`.
-5. If Notion credentials are present, create a new Notion database entry.
+5. If Notion credentials are present, create a new Notion Customer Briefs database entry.
 6. Keep the generated briefing available for human review.
 
 ## Current Features
@@ -136,7 +157,8 @@ A fuller sample is available in `sample_outputs/customer_briefing.json`.
 - Add richer sample inputs for multiple operational scenarios
 - Add optional validation for generated JSON fields
 - Add clearer risk-level classification rules
-- Add n8n workflow orchestration for scheduled runs and approvals
+- Add n8n workflow orchestration for scheduled runs, trigger-based workflows, and approvals
+- Add approval routing and notification handoffs
 - Add Notion screenshots and demo assets
 - Add retry and error-handling notes for production-like operations
 
@@ -149,12 +171,9 @@ Useful demo talking points:
 - AI workflow orchestration across Claude and Notion
 - structured extraction from unstructured operational inputs
 - human approval before publishing
-- lightweight architecture that can later be orchestrated with n8n
+- lightweight architecture prepared for future n8n orchestration
 - practical adoption pattern for operations, customer success, and leadership reporting
 
 ## Design Note
 
 This scaffold intentionally avoids LangChain, vector databases, frontend UI, and a full n8n implementation for now. The workflow should stay easy to inspect while the operational process is still being refined.
-```
-
-This scaffold intentionally avoids unnecessary frameworks so the workflow design can evolve before the implementation becomes heavy.

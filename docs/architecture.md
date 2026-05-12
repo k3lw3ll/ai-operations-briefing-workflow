@@ -2,6 +2,26 @@
 
 This project starts with a small, inspectable workflow instead of a full application framework.
 
+## Implementation Status
+
+Implemented now:
+
+- Python script reads a sample operational transcript.
+- Claude API generates a structured briefing.
+- The generated briefing is saved as local JSON.
+- The same briefing can be written to a Notion Customer Briefs database.
+- Human review happens in Notion after the page is created.
+
+Planned next:
+
+- n8n orchestration
+- trigger-based runs
+- approval routing
+- notifications and additional integrations
+- richer operational error handling
+
+n8n is not part of the current implementation. It is the intended future orchestration layer.
+
 ## Current Flow
 
 ```mermaid
@@ -16,7 +36,7 @@ flowchart LR
 2. A prompt template asks Claude to extract a structured briefing.
 3. The generated briefing is written as local structured JSON.
 4. If Notion credentials are configured, the briefing is published to the Notion Customer Briefs database.
-5. A human reviewer validates the output before it is treated as operationally approved.
+5. A human reviewer validates the Notion entry before it is treated as operationally approved.
 
 ## Layers
 
@@ -54,7 +74,7 @@ The human review layer is where an operator checks the AI-generated briefing for
 
 ### Future Orchestration Layer With n8n
 
-n8n can later coordinate triggers, scheduling, routing, retries, notifications, and approval handoffs. It is intentionally not implemented yet so the core workflow remains lightweight and understandable.
+n8n is planned for a future phase. It can later coordinate triggers, scheduling, routing, retries, notifications, approval handoffs, and additional integrations. It is intentionally not implemented yet so the current Python, Claude, JSON, and Notion workflow remains lightweight and understandable.
 
 ## Design Principles
 
