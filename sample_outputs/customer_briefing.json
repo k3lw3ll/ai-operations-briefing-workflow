@@ -1,4 +1,5 @@
 {
+  "customer": "Northstar Logistics",
   "summary": "Northstar Logistics wants to reduce the time spent consolidating regional weekly updates into leadership briefings. The proposed first version will focus on one region and generate a draft briefing for human review before storing the final version in Notion.",
   "stakeholders": [
     {

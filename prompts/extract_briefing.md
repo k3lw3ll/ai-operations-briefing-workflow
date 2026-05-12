@@ -4,6 +4,7 @@ You are analyzing an operational customer transcript or internal workflow note.
 
 Extract the information into structured JSON with the following fields:
 
+- `customer`: The customer or account name if available.
 - `summary`: A concise operational summary.
 - `stakeholders`: People, teams, or roles involved, including their interests or responsibilities.
 - `risks`: Operational, adoption, data quality, or execution risks.

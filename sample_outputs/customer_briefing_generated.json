@@ -1,64 +1,66 @@
 {
-  "summary": "Northstar Logistics operations team spends 3-4 hours weekly consolidating regional manager updates from multiple formats (email, Notion, spreadsheets) into leadership briefings. Customer requests AI-assisted workflow to draft briefings with required fields (summary, risks, owners, next steps, open questions) starting with one region, with mandatory human review before posting to Notion.",
+  "customer": "Northstar Logistics",
+  "summary": "Northstar's regional managers submit weekly updates in inconsistent formats (email, Notion, spreadsheets), requiring 3-4 hours of manual consolidation each Monday. They need an AI-assisted workflow to draft standardized leadership briefings with mandatory human review before posting to Notion.",
   "stakeholders": [
     {
       "name": "Maya Chen",
-      "role": "VP Operations, Northstar Logistics",
-      "interests": "Reduce time spent consolidating regional updates; ensure accurate action item ownership; maintain team trust in output quality"
-    },
-    {
-      "name": "Regional managers",
-      "role": "Northstar Logistics operations team",
-      "interests": "Submit weekly updates (currently via email, Notion comments, and spreadsheets)"
-    },
-    {
-      "name": "Operations lead",
-      "role": "Northstar Logistics",
-      "interests": "Review and approve AI-drafted briefings before posting to Notion"
+      "role": "VP Operations",
+      "interests": "Reduce time spent consolidating regional updates; ensure accurate risk flagging and action item ownership; maintain team trust in output quality"
     },
     {
       "name": "Luis Ortega",
       "role": "Customer Success",
-      "interests": "Coordinate implementation and customer satisfaction"
+      "interests": "Coordinate implementation and ensure customer success with the new workflow"
     },
     {
       "name": "Priya Shah",
       "role": "Implementation Lead",
-      "interests": "Design and deliver workflow solution"
+      "interests": "Design and deliver the briefing workflow solution"
+    },
+    {
+      "name": "Regional Managers",
+      "role": "Data contributors",
+      "interests": "Submit weekly updates (currently in varied formats)"
+    },
+    {
+      "name": "Operations Lead",
+      "role": "Reviewer/Approver",
+      "interests": "Review and approve AI-drafted briefings before leadership distribution"
     }
   ],
   "risks": [
     {
       "type": "adoption",
-      "description": "Operations team needs to trust AI-generated output quality before adopting the workflow"
+      "description": "Team needs to trust the AI output quality before adopting the workflow"
     },
     {
       "type": "data_quality",
-      "description": "Action items may be assigned to wrong owners if extraction is inaccurate"
+      "description": "Action items may be assigned to incorrect owners if not properly validated"
     },
     {
       "type": "operational",
-      "description": "Regional managers currently use inconsistent submission formats (email, Notion, spreadsheets), which may complicate data ingestion"
+      "description": "Inconsistent input formats from regional managers may affect extraction accuracy"
     }
   ],
   "next_steps": [
     {
-      "action": "Create sample briefing workflow for one region",
-      "owner": "Priya Shah / Implementation team",
-      "due_date": null
+      "action": "Create sample briefing workflow for one region and one weekly briefing",
+      "owner": "Priya Shah / Luis Ortega",
+      "due_date": "2026-05-19",
+      "notes": "Review scheduled with Maya next Friday"
     },
     {
-      "action": "Review sample workflow with Maya",
-      "owner": "Luis Ortega / Priya Shah",
-      "due_date": "2026-05-19"
+      "action": "Review sample workflow with customer",
+      "owner": "Luis Ortega",
+      "due_date": "2026-05-19",
+      "notes": "Meeting with Maya Chen"
     }
   ],
   "open_questions": [
-    "Which region should be used for the pilot briefing?",
-    "What is the specific format/template for the leadership briefing in Notion?",
-    "Who is the operations lead that will perform human review?",
-    "How will regional manager inputs be ingested from multiple sources (email, Notion, spreadsheets)?",
-    "What approval workflow should be used in Notion before posting to leadership?"
+    "What is the specific format/template required for the leadership briefing output?",
+    "How many regions does Northstar have, and what is the rollout sequence after the pilot?",
+    "What approval mechanism will be used in Notion for the operations lead review?",
+    "Are there existing data validation rules or owner assignment logic to prevent incorrect action item assignments?"
   ],
   "human_review_required": true
 }
