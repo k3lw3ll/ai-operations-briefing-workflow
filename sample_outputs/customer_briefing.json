@@ -1,0 +1,50 @@
+{
+  "summary": "Northstar Logistics wants to reduce the time spent consolidating regional weekly updates into leadership briefings. The proposed first version will focus on one region and generate a draft briefing for human review before storing the final version in Notion.",
+  "stakeholders": [
+    {
+      "name": "Maya Chen",
+      "role": "VP Operations",
+      "interest": "Needs reliable weekly leadership briefings with clear risks and action items."
+    },
+    {
+      "name": "Luis Ortega",
+      "role": "Customer Success",
+      "interest": "Coordinates customer discovery and follow-up."
+    },
+    {
+      "name": "Priya Shah",
+      "role": "Implementation Lead",
+      "interest": "Designs the first workflow and validates required briefing fields."
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Regional managers submit updates in inconsistent formats.",
+      "impact": "Operations team spends several hours manually consolidating updates.",
+      "owner": "Maya Chen"
+    },
+    {
+      "risk": "AI-generated action items may assign ownership incorrectly.",
+      "impact": "Incorrect assignments could reduce trust and create execution errors.",
+      "owner": "Priya Shah"
+    }
+  ],
+  "next_steps": [
+    {
+      "action": "Create a sample briefing workflow for one region.",
+      "owner": "Priya Shah",
+      "due": "Next Friday"
+    },
+    {
+      "action": "Review the sample workflow and briefing output.",
+      "owner": "Maya Chen",
+      "due": "Next Friday"
+    }
+  ],
+  "open_questions": [
+    "Which region should be used for the first workflow pilot?",
+    "What approval criteria should the operations lead use before posting to Notion?",
+    "Which Notion database fields should map to the structured briefing output?"
+  ],
+  "human_review_required": true
+}

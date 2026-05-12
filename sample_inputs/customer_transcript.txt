@@ -1,0 +1,23 @@
+Customer: Northstar Logistics
+Date: 2026-05-12
+Participants: Maya Chen, VP Operations; Luis Ortega, Customer Success; Priya Shah, Implementation Lead
+
+Transcript:
+
+Luis: Thanks for joining. Maya, can you walk us through what is slowing the operations team down right now?
+
+Maya: The biggest issue is that our regional managers submit weekly updates in different formats. Some send emails, some add comments in Notion, and some put notes in spreadsheets. By Monday morning, my team spends three or four hours trying to turn that into a useful leadership briefing.
+
+Priya: Are there specific fields you always need in the briefing?
+
+Maya: Yes. We need a short summary, customer-impacting risks, owner names, next steps, and any open questions that require executive input. We also need confidence that someone reviewed the output before it goes to leadership.
+
+Luis: What would a successful first version look like?
+
+Maya: Start with one region and one weekly briefing. If the AI can draft a clean summary and flag risks, our operations lead can approve it before it gets posted to Notion.
+
+Priya: Any concerns?
+
+Maya: Two. First, the team needs to trust the output. Second, we cannot have action items assigned to the wrong person. Human review is required.
+
+Luis: Next step is for us to create a sample briefing workflow and review it with Maya next Friday.
